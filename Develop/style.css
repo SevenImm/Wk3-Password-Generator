@@ -117,6 +117,15 @@ button[disabled] {
   resize: none;
   overflow: hidden;
 }
+/* Add styling to the grid password criteria */
+.form {
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 6px;
+  column-gap: 6px;
+  justify-content: center;
+  align-items: center;
+}
 
 @media (max-width: 690px) {
   .btn {

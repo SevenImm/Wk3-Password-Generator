@@ -1,34 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Password Generator</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Password Generator</h1>
-      </header>
-      <div class="card">
-        <div class="card-header">
-          <h2>Generate a Password</h2>
-        </div>
-        <div class="card-body">
-          <textarea
-            readonly
-            id="password"
-            placeholder="Your Secure Password"
-            aria-label="Generated Password"
-          ></textarea>
-        </div>
-        <div class="card-footer">
-          <button id="generate" class="btn">Generate Password</button>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Password Generator</h1>
+    </header>
+    <div class="card">
+      <div class="card-header">
+        <h2>Generate a Password</h2>
+      </div>
+      <div class="card-body">
+        <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
+      </div>
+      <div class="card-footer">
+        <form class="form"> <!--Wrap my criteria to separate the elements using a grid style-->
+          <!-- Add criteria for password generator -->
+          <label for="">Number of Characters</label>
+          <!-- Make the slider and numb display one to have them together. -->
+          <div>
+          <input type="range" min="8" max="128" value="10" id="CharAmtRange">
+          <input type="number" min="8" max="128" value="10" id="CharAmtNum">
+          </div>
+          <label for="" id="includeUppCase">Include Uppercase</label>
+          <input type="checkbox" id="includeUppCase">
+          <label for="" id="includeNum">Include Numbers</label>
+          <input type="checkbox" id="includeNum">
+          <label for="" id="includeSymb">Include Symbols</label>
+          <input type="checkbox" id="includeSymb">
+          <button type="submit" id="generate" class="btn">Generate Password</button>
+        </form>
       </div>
     </div>
-    <script src="script.js"></script>
-  </body>
+  </div>
+  <script src="script.js" defer></script> <!--Make the script load after the page has loaded-->
+</body>
+
 </html>
