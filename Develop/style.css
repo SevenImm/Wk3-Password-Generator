@@ -86,6 +86,7 @@ header {
   padding: 14px 34px;
   text-align: center;
   cursor: pointer;
+  grid-column: span 2;
 }
 
 button[disabled] {
@@ -125,6 +126,19 @@ button[disabled] {
   column-gap: 6px;
   justify-content: center;
   align-items: center;
+}
+/* Have the slider and display align at the top */
+.Char-Amount-Container{
+  display: flex;
+  align-items: center;
+}
+/* Make the display numb shorter to a 3 digit number */
+.num-input {
+  width: 3rem;
+}
+/* Make font bold */
+label {
+  font-weight: bold;
 }
 
 @media (max-width: 690px) {
