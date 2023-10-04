@@ -19,10 +19,12 @@
         <h2>Generate a Password</h2>
       </div>
       <div class="card-body">
-        <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
+        <!-- Use the password id to instert the text in its place, refrencing the id -->
+        <textarea readonly id="passwordTxtArea" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
       </div>
       <div class="card-footer">
-        <form class="form"> <!--Wrap my criteria to separate the elements using a grid style-->
+        <!-- Give form an ID -->
+        <form id="passGenForm" class="form"> <!--Wrap my criteria to separate the elements using a grid style-->
           <!-- Add criteria for password generator -->
           <label for="">Number of Characters</label>
           <!-- Make the slider and numb display one to have them together. -->
