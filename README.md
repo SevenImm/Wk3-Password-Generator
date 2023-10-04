@@ -8,6 +8,12 @@ For the feature criteria I want to add the  password criteria in between of the 
 - Added a wrapper to the slider and number display to have them displayed together.
 - Added Styling to the font.
 - Made the button 2 colums for center style.
+# Feature/PassGen:
+For the feature password generation, I want to submit a form that actually generates a password:
+When Generate password is pressed, 
+Display a password. 
+**COMMENT: This password wont follow the selected criteria yet**
+
 ## Screenshots:
 # Feature/Files:
 ![Alt text](/Assets/FeatureFiles.png)
