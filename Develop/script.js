@@ -40,7 +40,7 @@ form.addEventListener('submit', e => {
 });
 // Make a function to generate a password
 function generatePassword(charAmount, includeUppCase, includeNum, includeSym) {
-  let charCodes = LOWCASE_CHAR_CODE;
+  var charCodes = LOWCASE_CHAR_CODE;
 
   if (includeUppCase) charCodes = charCodes.concat(UPPCASE_CHAR_CODE);
   if (includeNum) charCodes = charCodes.concat(NUMCASE_CHAR_CODE);
