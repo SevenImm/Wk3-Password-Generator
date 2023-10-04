@@ -1,4 +1,5 @@
 // Assignment code here
+
 // Declare values with id
 const CharAmtRange = document.getElementById ('CharAmtRange');
 const CharAmtNum = document.getElementById ('CharAmtNum');
@@ -40,7 +41,7 @@ form.addEventListener('submit', e => {
 });
 // Make a function to generate a password
 function generatePassword(charAmount, includeUppCase, includeNum, includeSym) {
-  var charCodes = LOWCASE_CHAR_CODE;
+  let charCodes = LOWCASE_CHAR_CODE;
 
   if (includeUppCase) charCodes = charCodes.concat(UPPCASE_CHAR_CODE);
   if (includeNum) charCodes = charCodes.concat(NUMCASE_CHAR_CODE);
@@ -68,3 +69,4 @@ function arrayLowtoHigh(low, high) {
   }
   return array;
 }
+

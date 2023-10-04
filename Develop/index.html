@@ -23,6 +23,7 @@
         <textarea readonly id="passwordTxtArea" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
       </div>
       <div class="card-footer">
+        <br>
         <!-- Give form an ID -->
         <form id="passGenForm" class="form"> <!--Wrap my criteria to separate the elements using a grid style-->
           <!-- Add criteria for password generator -->
@@ -32,11 +33,12 @@
           <input type="range" min="8" max="128" value="10" id="CharAmtRange">
           <input class="num-input" type="number" min="8" max="128" value="10" id="CharAmtNum">
           </div>
-          <label for="" id="includeUppCase">Include Uppercase</label>
+          <!-- Debugged code: had ID with same name as the input label id. Erased ID attribute and swept for in place of it. -->
+          <label for="includeUppCase">Include Uppercase</label>
           <input type="checkbox" id="includeUppCase">
-          <label for="" id="includeNum">Include Numbers</label>
+          <label for="includeNum">Include Numbers</label>
           <input type="checkbox" id="includeNum">
-          <label for="" id="includeSymb">Include Symbols</label>
+          <label for="includeSymb">Include Symbols</label>
           <input type="checkbox" id="includeSymb">
           <button type="submit" id="generate" class="btn">Generate Password</button>
         </form>
