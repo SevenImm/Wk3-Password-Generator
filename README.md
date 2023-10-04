@@ -13,11 +13,13 @@ For the feature password generation, I want to submit a form that actually gener
 When Generate password is pressed, 
 Display a password. 
 **COMMENT: This password wont follow the selected criteria yet**
-
+-Added password generation
 ## Screenshots:
 # Feature/Files:
 ![Alt text](/Assets/FeatureFiles.png)
 # Feature/Criteria: 
 ![Alt text](/Assets/FeatureCriteria.png)
+# Feature/PassGen: 
+![Alt text](/Assets/PassGen.png)
 # Credits:
 https://www.youtube.com/watch?v=iKo9pDKKHnc
